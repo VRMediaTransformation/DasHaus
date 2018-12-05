@@ -2,12 +2,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Das Haus</title>
-    <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
-    <script src="https://aframe.io/releases/0.3.0/aframe-inspector.min.js"></script>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/0.8.0/aframe-inspector.min.js"></script>
 </head>
 <body>
 <a-scene> <!--inspector="url: https://aframe.io/releases/0.3.0/aframe-inspector.min.js" -->
-   <!-- <a-sky color="#80dfff"></a-sky>-->
+    <!--<a-sky color="#80dfff"></a-sky>--> 
     <a-assets>
     <a-assets-item id="door-obj" src="door.obj"></a-assets-item>
     <a-asset-item id="door-mtl" src="door.mtl"></a-asset-item>
@@ -24,36 +24,21 @@
     </a-assets>
 
     <a-box>
-        <a-entity obj-model="obj: #door-obj; mtl: #door-mtl" position="-0.67 -0.84 -12.66" scale="0.50 0.50 0.50" visible="true"></a-entity>
-        <a-animation attribute="rotation" repeat="indefinite" to="0 360 0"></a-animation>
-        <!--<a-event name="mouseenter" scale="4 1 6"></a-event>-->
-    </a-box>    
-  <!--<a-camera position=" 0 7 5">
-        <a-cursor color="#FF0000"></a-cursor>
-    </a-camera>-->
+    <a-entity obj-model="obj: #door-obj; mtl: #door-mtl" position="-0.67 -0.84 -12.66" scale="0.50 0.50 0.50" visible="true"></a-entity>
+           <a-animation attribute="rotation" repeat="indefinite" to="0 360 0"></a-animation>
+       <a-event name="mouseenter" scale="4 1 6"></a-event>
+    </a-box>
+    <a-box>
+          <a-camera position="0 7 5">
+            <a-cursor color="#FF0000"></a-cursor>
+        </a-camera>
+    </a-box>
     <a-entity obj-model="obj: #room-obj; mtl: #room-mtl" position=" 0.36 5.93 5.59" scale="-0.26 -0.26 -0.26 " visible="true"></a-entity>
-    <a-entity obj-model="obj: #bike-obj; mtl: #bike-mtl" position=" -7.47 0.75 0.40" scale="0.39 0.39 0.39" rotation="" visible="true"></a-entity>
-    <a-entity obj-model="obj: #helmet-obj; mtl: #helmet-mtl" position=" -9.87 0.81 7.92" scale="0.08 0.08 0.08 " rotation="" visible="true"></a-entity>
-    <a-entity obj-model="obj: #stairs-obj; mtl: #stairs-mtl" position=" -9.87 0.81 7.92" scale=" 0.08 0.08 " visible="true"></a-entity>
-    
+    <a-entity obj-model="obj: #bike-obj; mtl: #bike-mtl" position=" -7.47 0.75 0.40" scale="0.39 0.39 0.39" rotation="0.00 0.00 82.51" visible="true"></a-entity>
+    <a-entity obj-model="obj: #helmet-obj; mtl: #helmet-mtl" position=" -9.87 0.81 7.92" scale="0.08 0.08 0.08 " rotation="39.53 0.00 -69.33" visible="true"></a-entity>
+    <a-entity obj-model="obj: #stairs-obj; mtl: #stairs-mtl" position="6.76 1.06 15.44" scale="10.36 11.07 8.83" rotation="-3.44 -101.99 4.01" visible="true"></a-entity>
 
 </a-scene>
-    <!--<script>
-    var box = document.querySelector('a-box');
-        box.addEventListener("mouseenter", function() 
-           {
-        box.setAttribute ( "scale", 
-                          {
-            x: 0.5,
-            y: 2, 
-            z: 3
-            
-        }
-            
-        }
-                            
-                            )
-    </script>-->
            
 </body>
 </html>
