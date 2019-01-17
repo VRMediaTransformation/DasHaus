@@ -14,8 +14,8 @@ eingebunden. Zudem modellieren wir auch mittels A-Frame Boxen in A-Frame selbst.
 
 #### Gruppe
 Mitglieder:
-Velina Kinanova
-Felix Stümpel
+Velina Kinanova,
+Felix Stümpel,
 Paula Dickmann
 
 
