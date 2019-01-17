@@ -12,7 +12,14 @@ Dieses nutzen wir über den ? Webstorm.
 Für die Modellierung von 3D-Objekten verwenden wir Modellierungsprogramme wie 3Dsmax und Blender. Diese werden mittels Tags im HTML-Code 
 eingebunden. Zudem modellieren wir auch mittels A-Frame Boxen in A-Frame selbst.
 
+
+##### Raum 1:
++ Raum mit Wendeltreppe, Fahrrad etc. 
++ Tür, die bei Draufschauen aufgeht
 ![](https://github.com/VRMediaTransformation/DasHaus/blob/master/Raum1.PNG)
+
+##### Raum 2:
++ Labyrinthraum mit sich verändernden Wänden
 ![](https://github.com/VRMediaTransformation/DasHaus/blob/master/Raum2.PNG)
 
 #### Gruppe
