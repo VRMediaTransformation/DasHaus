@@ -12,6 +12,8 @@ Dieses nutzen wir über den ? Webstorm.
 Für die Modellierung von 3D-Objekten verwenden wir Modellierungsprogramme wie 3Dsmax und Blender. Diese werden mittels Tags im HTML-Code 
 eingebunden. Zudem modellieren wir auch mittels A-Frame Boxen in A-Frame selbst.
 
+![](https://github.com/VRMediaTransformation/DasHaus/blob/master/Raum1.PNG)
+
 #### Gruppe
 Mitglieder:
 Velina Kinanova,
