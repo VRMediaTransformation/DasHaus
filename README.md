@@ -3,7 +3,7 @@
 
 #### Projekt Idee
 + Das Projekt visualisiert eine 3D-Virtual Reality Umgebung, die auf dem Teil von Seite 525 bis 535 aus den Buch "House of Leaves" 
-von Mark Z. Danielewski basiert. 
+von Mark Z. Danielewski basiert. Dafür wollen wir zwei Räume entwicklen, durch die sich der User bewegen kann. Einige Elemente sollen dabei animiert werden, wie z.B. eine Tür, die auf den Blick des User hin aufgeht. 
 
 #### Programm
 + Für die Entwicklung des Projekts haben wir uns für die Nutzung von **A-Frame** entschieden:
