@@ -7,10 +7,10 @@ von Mark Z. Danielewski basiert.
 
 #### Programm
 + Für die Entwicklung des Projekts haben wir uns für die Nutzung von A-Frame entschieden:
-Ein webbasiertes Programm, das eine dreidimensionale Welt über eine deklarative Sprache wie HTML schafft.
+Ein webbasiertes front-end Programm, das eine dreidimensionale Welt über eine deklarative Sprache wie HTML schafft.
 Dieses nutzen wir über den ? Webstorm.
-Für die Modellierung von 3D-Objekten verwenden wir Modellierungsprogramme wie 3Dxmax und Blender. Diese werden mittels Tags im HTML-Code 
-eingebunden
+Für die Modellierung von 3D-Objekten verwenden wir Modellierungsprogramme wie 3Dsmax und Blender. Diese werden mittels Tags im HTML-Code 
+eingebunden. Zudem modellieren wir auch mittels A-Frame Boxen in A-Frame selbst.
 
 #### Gruppe
 Mitglieder:
