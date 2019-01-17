@@ -13,6 +13,7 @@ Für die Modellierung von 3D-Objekten verwenden wir Modellierungsprogramme wie 3
 eingebunden. Zudem modellieren wir auch mittels A-Frame Boxen in A-Frame selbst.
 
 ![](https://github.com/VRMediaTransformation/DasHaus/blob/master/Raum1.PNG)
+![](https://github.com/VRMediaTransformation/DasHaus/blob/master/Raum2.PNG)
 
 #### Gruppe
 Mitglieder:
