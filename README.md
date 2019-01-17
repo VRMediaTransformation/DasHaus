@@ -3,7 +3,7 @@
 
 #### Projekt Idee
 + Das Projekt visualisiert eine 3D-Virtual Reality Umgebung, die auf dem Teil von Seite 525 bis 535 aus den Buch "House of Leaves" 
-von Mark Z. Danielewski basiert. Dafür wollen wir zwei Räume entwicklen, durch die sich der User bewegen kann. Einige Elemente sollen dabei animiert werden, wie z.B. eine Tür, die auf den Blick des User hin aufgeht. 
+von Mark Z. Danielewski basiert. 
 
 #### Programm
 + Für die Entwicklung des Projekts haben wir uns für die Nutzung von **A-Frame** entschieden:
@@ -18,6 +18,9 @@ Dieses nutzen wir über Editor **Webstorm**.
 
 #### Raum 2:
 + Labyrinthraum mit sich verändernden Wänden
++ Labyrinth besteht aus Boxen, die im Editor ausgerichtet wurden
++ Boxen wurden via HTML-Code gerendert
++ Wenn über die Wände mit dem Cursor gehovert wird, verändern diese aufgrund eines JS-Codes ihre Größe
 ![](https://github.com/VRMediaTransformation/DasHaus/blob/master/Raum2.PNG)
 
 #### Gruppe
