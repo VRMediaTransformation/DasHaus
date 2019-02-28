@@ -27,7 +27,7 @@ Dieses nutzen wir über Editor **Webstorm**.
 + Ausgang aus dem Labirynth
 + neue Platform
 + dannach verschwindet plötzlich alles
-
+![](https://github.com/VRMediaTransformation/DasHaus/blob/master/Raum3.png)
 
 #### Gruppe
 Mitglieder:
