@@ -23,6 +23,12 @@ Dieses nutzen wir über Editor **Webstorm**.
 + Wenn über die Wände mit dem Cursor gehovert wird, verändern diese aufgrund eines JS-Codes ihre Größe
 ![](https://github.com/VRMediaTransformation/DasHaus/blob/master/Raum2.PNG)
 
+#### Raum 3:
++ Ausgang aus dem Labirynth
++ neue Platform
++ dannach verschwindet plötzlich alles
+
+
 #### Gruppe
 Mitglieder:
 Velina Kinanova,
