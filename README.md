@@ -21,7 +21,7 @@ Dieses nutzen wir über Editor **Webstorm**.
 + Labyrinthraum mit sich verändernden Wänden
 + Labyrinth besteht aus Boxen, die im Editor ausgerichtet wurden
 + Boxen wurden via HTML-Code gerendert
-+ Wenn über die Wände mit dem Cursor gehovert wird, verändern diese aufgrund eines JS-Codes ihre Größe, Textur und Position
++ Wenn über die Wände mit dem Cursor gehovert wird, verändern diese aufgrund eines JS-Codes ihre Größe, Textur und Rotation
 ![](https://github.com/VRMediaTransformation/DasHaus/blob/master/Raum2.png)
 
 #### Raum 3:
