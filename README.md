@@ -24,7 +24,7 @@ Dieses nutzen wir über Editor **Webstorm**.
 ![](https://github.com/VRMediaTransformation/DasHaus/blob/master/Raum2.PNG)
 
 #### Raum 3:
-+ Ausgang aus dem Labirynth
++ Ausgang aus dem Labyrinth
 + neue Platform
 + dannach verschwindet plötzlich alles
 ![](https://github.com/VRMediaTransformation/DasHaus/blob/master/Raum3.png)
