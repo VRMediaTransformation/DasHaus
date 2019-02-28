@@ -14,13 +14,13 @@ Dieses nutzen wir über Editor **Webstorm**.
 #### Raum 1:
 + Raum mit Wendeltreppe, Fahrrad etc. 
 + Tür, die bei Draufschauen aufgeht
-![](https://github.com/VRMediaTransformation/DasHaus/blob/master/Raum1.PNG)
+![](https://github.com/VRMediaTransformation/DasHaus/blob/master/Raum1.png)
 
 #### Raum 2:
 + Labyrinthraum mit sich verändernden Wänden
 + Labyrinth besteht aus Boxen, die im Editor ausgerichtet wurden
 + Boxen wurden via HTML-Code gerendert
-+ Wenn über die Wände mit dem Cursor gehovert wird, verändern diese aufgrund eines JS-Codes ihre Größe
++ Wenn über die Wände mit dem Cursor gehovert wird, verändern diese aufgrund eines JS-Codes ihre Größe, Textur und Position
 ![](https://github.com/VRMediaTransformation/DasHaus/blob/master/Raum2.PNG)
 
 #### Raum 3:
