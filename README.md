@@ -21,7 +21,7 @@ Dieses nutzen wir über Editor **Webstorm**.
 + Die Wendeltreppe beginnt zu rotieren
 + Die Tür öffnet sich
 + Pfeile ermöglichen eine Bewegung durch den Raum
-![](https://github.com/VRMediaTransformation/DasHaus/blob/master/Raum1.png)
+![](https://github.com/VRMediaTransformation/DasHaus/blob/master/Raum1.PNG)
 
 #### Raum 2:
 + Labyrinthraum mit sich verändernden Wänden
