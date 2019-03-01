@@ -28,7 +28,7 @@ Dieses nutzen wir über Editor **Webstorm**.
 + Labyrinth besteht aus Boxen, die im Editor ausgerichtet wurden
 + Boxen wurden via HTML-Code gerendert
 + Wenn über die Wände mit dem Cursor gehovert wird, verändern diese aufgrund eines JS-Codes ihre Größe, Textur und Rotation
-![](https://github.com/VRMediaTransformation/DasHaus/blob/master/Raum2.png)
+![](https://github.com/VRMediaTransformation/DasHaus/blob/master/Raum2.PNG)
 
 #### Raum 3:
 + Ausgang aus dem Labyrinth
