@@ -19,7 +19,7 @@ Dieses nutzen wir über Editor **Webstorm**.
 + Zu Beginn befindet sich der User im ersten Raum, in dem sich ein Fahrrad, ein Helm, eine Taschenlampe und eine Wendeltreppe befindet 
 + Das Fahrrad fällt um, sobald der Cursor darüber fährt
 + Die Wendeltreppe beginnt zu rotieren
-+ Die Tür öffnet sich
++ Die Tür öffnet sich, wodurch auch die beginnt Musik zu spielen
 + Pfeile ermöglichen eine Bewegung durch den Raum
 
 ![](https://github.com/VRMediaTransformation/DasHaus/blob/master/Raum1.PNG)
@@ -42,8 +42,7 @@ Dieses nutzen wir über Editor **Webstorm**.
 #### Schwierigkeiten
 Während der Entwicklung des Projekts ergaben sich einige Probleme und Schwierigkeiten in der Umsetzung:
 + Häufig war es nicht möglich 3D-Objekte aus 3Dsmax mit ihrer Textur in A-Frame zu übernehmen, sodass die Textur erst in Blender hinzugefügt werden konnte
-+ Abhänig von den Objekte konnte die Textur manchmal nur im obj. Format eingelesen werden und nicht im .dae-Format
-+ 
++ Abhängig von den Objekte konnte die Textur der Objekte manchmal nur im obj.-Format eingelesen werden und nicht im .dae-Format
 
 #### Gruppe
 Mitglieder:
