@@ -34,7 +34,7 @@ Dieses nutzen wir über Editor **Webstorm**.
 
 #### Raum 3:
 + Ausgang aus dem Labyrinth
-+ User gelangt im Anschluss an das Labyrinth zu einerr Platform, auf der sich nur eine Luftmatratze befindet
++ User gelangt im Anschluss an das Labyrinth zu einer Platform, auf der sich nur eine Luftmatratze befindet
 + Fährt der Cursor über die Luftmatratze verschwinden alle anderen Objekte
 
 ![](https://github.com/VRMediaTransformation/DasHaus/blob/master/Raum3.png)
