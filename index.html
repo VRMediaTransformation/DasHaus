@@ -1,0 +1,1053 @@
+<html>
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Das Haus</title>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<a-scene>
+
+
+    <a-assets>
+        <!--Bike-->
+        <a-assets-item id="bike" src="bike.dae"></a-assets-item>
+
+        <!--Door-->
+        <a-assets-item id="door" src="door.dae"></a-assets-item>
+
+        <!--Helmet-->
+        <a-assets-item id="helmet" src="helmet.dae"></a-assets-item>
+
+        <!--Stairs-->
+        <a-assets-item id="stairs" src="stairs.dae"></a-assets-item>
+
+        <!--Flashlight-->
+        <a-assets-item id="flashlight-obj" src="flashlight.obj"></a-assets-item>
+        <a-asset-item id="flashlight-mtl" src="flashlight.mtl"></a-asset-item>
+
+        <!-- Sleeping Bag -->
+        <a-assets-item id="sleep-obj" src="sleep.obj"></a-assets-item>
+        <a-assets-item id="sleep-mtl" src="sleep.mtl"></a-assets-item>
+    </a-assets>
+
+    <!-- Musik -->
+    <a-assets>
+    <audio id="sound" src="sound.mp3" begin="click"></audio>
+    </a-assets>
+
+    <a-entity sound="src: #sound"></a-entity>
+
+    <!--Cursor-->
+    <a-entity id="cursor" position="0 6.22 60.45322" look-controls="" wasd-controls="" rotation="-0.8021409131831572 358.4423966338426 0">
+        <a-cursor color="#FF0000" material="" raycaster="" cursor="" geometry=""></a-cursor>
+    </a-entity>
+
+    <!--Camera-->
+    <a-entity id="camera"
+              camera=""
+              wasd-controls=""
+              position="0 6.22 60.45322"
+              rotation="-0.8021409131831572 358.4423966338426 0"
+              look-controls=""
+              aframe-injected=""
+              data-aframe-inspector-original-camera=""></a-entity>
+
+    <!--Light1-->
+    <a-light
+            id="light_room1"
+            type="ambient"
+             intensity="0.3"
+             position="-0.724 39.007 62.831"
+             light=""></a-light>
+
+    <!--Light2-->
+    <a-light
+            id="light_room2"
+            type="ambient"
+            intensity="0.3"
+            position="-0.35537 39.007 -1.16163"
+            light=""></a-light>
+
+    <!--Light3-->
+    <a-light id="light_room3"
+             type="ambient"
+             intensity="1"
+             position="43.20011 39.007 -32.00092"
+             light=""></a-light>
+
+
+    <!--Ground-->
+    <a-cylinder id="ground"
+                position="0 0 0.05084"
+                src="https://cdn.aframe.io/a-painter/images/floor.jpg"
+                radius="35"
+                height="0.1"></a-cylinder>
+
+    <!--Ground2-->
+    <a-cylinder id="ground2" src="https://cdn.aframe.io/a-painter/images/floor.jpg"
+                radius="35" height="0.1" position="0 0 49.86389"></a-cylinder>
+
+    <!--Ground3-->
+    <a-cylinder id="ground3" src="https://cdn.aframe.io/a-painter/images/floor.jpg"
+                radius="35" height="0.1"
+                position="41.64701 0 -5.01068"
+                material=""
+                geometry=""></a-cylinder>
+
+
+    <!--Textur_Wende-->
+    <a-assets>
+        <img id="texture" src="texture2.jpg">
+        <img id="brick2" src="brick2.jpeg">
+        <img id="schiefer" src="schiefer.jpeg">
+        <img id="schwarz" src="schwarz.jpg">
+    </a-assets>
+
+    <a-box
+            id="aone"
+            width="1"
+            height="0.5"
+            deepth="1"
+            position="-25 5.072 49.13796" scale="1 28.311 50"
+            src="#texture"
+
+    ></a-box>
+
+    <a-box
+            id="atwo"
+            width="1"
+            height="0.5"
+            deepth="1"
+            position="25 5.091 49.93352" scale="1 28.4522 50"
+            src="#texture"
+    ></a-box>
+
+    <a-box
+            id="athree_1"
+            width="1"
+            height="0.5"
+            deepth="1"
+            position="-12.898 4.962 25.52722" rotation="0 90 0" scale="1 29.62403 23.6156"
+            src="#texture"
+    ></a-box>
+
+    <a-box
+            id="athree_2"
+            width="1"
+            height="0.5"
+            deepth="1"
+            position="14.721 5.028 25.58941" rotation="0 90 0" scale="1 29.32921 19.45333"
+            src="#texture"
+    ></a-box>
+
+    <a-box
+            id="afour"
+            width="1"
+            height="0.5"
+            deepth="1"
+            position="0 5.00647 74.8567" rotation="0 90 0" scale="1 28.45307 50"
+            src="#texture"
+    ></a-box>
+
+
+    <!--Aussenwände Lbyrinth-->
+    <a-box
+            id="awall"
+            width="1"
+            height="1"
+            deepth="1"
+            position="-25 0 0"
+            scale=" 1 25 50"
+            src="#texture"
+
+    ></a-box>
+
+    <a-box id="bwall"
+           width="1"
+           height="1"
+           deepth="1"
+           position="25 4.43618 5.75314"
+           scale="1 15.63894 39.93863"
+           src="#texture"
+           material=""
+           geometry=""></a-box>
+
+    <a-box
+            id="cwall"
+            width="1"
+            height="1"
+            deepth="1"
+            position="0 0 -25"
+            rotation=" 0 90 0"
+            scale=" 1 25 50"
+            src="#texture"
+
+    ></a-box>
+
+    <!--labyrinth_Innenwände-->
+    <a-box
+            id="one"
+            width="1"
+            height="1"
+            deepth="1"
+            position="-20 0 -1"
+            scale=" 1 25 35"
+            src="#texture"
+
+    >
+
+    </a-box>
+    <!--box2-->
+    <a-box
+            id="two"
+            width="1"
+            height="1"
+            deepth="1"
+            position="-15 0 -22"
+            scale=" 1 25 7"
+            src="#texture"
+
+    >
+
+    </a-box>
+    <!--box3-->
+    <a-box
+            id="three"
+            width="1"
+            height="1"
+            deepth="1"
+            position="-17.5 0 -18"
+            scale=" 1 25 6"
+            rotation="0 90 0"
+            src="#texture"
+
+    >
+
+    </a-box>
+    <!--box4-->
+    <a-box
+            id="four"
+            width="1"
+            height="1"
+            deepth="1"
+            position="-13 0 18"
+            scale=" 1 25 15"
+            src="#texture"
+
+    >
+
+    </a-box>
+
+    <a-box
+            id="five"
+            width="1"
+            height="1"
+            deepth="1"
+            position="-6 0 -15"
+            scale=" 1 25 20"
+            src="#texture"
+
+    >
+
+    </a-box>
+
+    <a-box
+            id="six"
+            width="1"
+            height="1"
+            deepth="1"
+            position="2 0 -17.5"
+            scale=" 1 25 15"
+            rotation="0 90 0"
+            src="#texture"
+
+    >
+
+    </a-box>
+
+    <a-box
+            id="seven"
+            width="1"
+            height="1"
+            deepth="1"
+            position=" -10 0 -12"
+            scale=" 1 25 8"
+            rotation="0 90 0"
+            src="#texture"
+
+    >
+
+    </a-box>
+
+    <a-box
+            id="eight"
+            width="1"
+            height="1"
+            deepth="1"
+            position="0 0 3"
+            scale=" 1 25 27"
+            rotation="0 0 0"
+            src="#texture"
+
+    >
+
+    </a-box>
+
+
+    <a-box
+            id="nine"
+            width="1"
+            height="1"
+            deepth="1"
+            position="-7.1 0 4"
+            scale=" 1 25 15"
+            rotation="0 90 0"
+            src="#texture"
+
+    >
+
+    </a-box>
+
+    <a-box
+            id="ten"
+            width="1"
+            height="1"
+            deepth="1"
+            position="-14.5 0 0.7"
+            scale=" 1 25 7.5"
+            rotation="0 0 0"
+            src="#texture"
+
+    >
+
+    </a-box>
+    <a-box
+            id="eleven"
+            width="1"
+            height="1"
+            deepth="1"
+            position="5 0 16"
+            scale=" 1 25 25"
+            rotation="0 90 0"
+            src="#texture"
+
+    >
+
+    </a-box>
+    <a-box
+            id="twelve"
+            width="1"
+            height="1"
+            deepth="1"
+            position="15.5 0 8"
+            scale=" 1 25 20"
+            rotation="0 90 0"
+            src="#texture"
+
+    >
+
+    </a-box>
+    <a-box
+            id="thirteen"
+            width="1"
+            height="1"
+            deepth="1"
+            position="8.5 0 0"
+            scale=" 1 25 18"
+            rotation="0 90 0"
+            src="#texture"
+
+    >
+
+    </a-box>
+
+    <a-box
+            id="fourteen"
+            width="1"
+            height="1"
+            deepth="1"
+            position="16 0 -8"
+            scale=" 1 25 18"
+            rotation="0 90 0"
+            src="#texture"
+
+    >
+
+    </a-box>
+    <a-box
+            id="fithteen"
+            width="1"
+            height="1"
+            deepth="1"
+            position="15.5 0 -20"
+            scale=" 1 25 10"
+            rotation="0 0 0"
+            src="#texture"
+
+    >
+    </a-box>
+
+
+
+
+    <!--Bike-->
+    <a-entity id="bike" collada-model="#bike"
+              position="-11.70307 0.0258 32.10957"
+              scale="0.152 0.083 0.073"
+              rotation="-0.2412152317500766 -63.74785724405053 -20.050085082808028"
+              visible="true"></a-entity>
+
+
+    <!-- Door -->
+    <a-entity id="door1" collada-model="#door"
+              position="4.94005 0.103 25.55291"
+              scale="1.35784 3.0137 3.23826"
+              rotation="0 90 0"
+              event="target:#door-rotation; anevent:rotate">
+        <a-animation begin="rotate"
+                     id="door-rotation"
+                     attribute="rotation"
+                     dur="1000"
+                     fill="forwards"
+                     to="0 180 0"
+                     direction="alternate">
+        </a-animation>
+    </a-entity>
+
+    <!--Stairs-->
+    <a-entity id="stairs1"
+              collada-model="stairs.dae"
+              position="1.27509 5.90911 33.01608"
+              scale="9.15 15.34871 6"
+              rotation="0 103.87344854414891 85.37551715195038">
+
+        <a-animation attribute="rotation"
+                     id="stairs-rotation"
+                     dur="2000"
+                     fill="forwards"
+                     to="0 360 0"
+                     direction="alternate"
+                     repeat="indefinite"
+                     begin="mouseenter">
+        </a-animation>
+    </a-entity>
+
+    <!--Helmet-->
+    <a-entity
+            id="helmet1"
+            collada-model="#helmet"
+            position="-13.16047 0.81 43.41266"
+            scale="0.08 0.08 0.08"
+            rotation="39.53 0 -69.33"
+            visible="true"></a-entity>
+
+    <!--Flashlight-->
+    <a-entity
+            id="Flashlight"
+            obj-model="obj: #flashlight-obj; mtl: #flashlight-mtl"
+              position="-6.76446 0.353 47.198"
+              scale="0.188 0.188 0.188"
+              rotation=""></a-entity>
+
+    <!--Air Bed-->
+    <a-entity id="sleep"
+              obj-model="obj:sleep.obj;mtl:sleep.mtl"
+              position="69.25263 0.81 -16.59013"
+              scale="15.88101 15.88101 15.88101"
+              rotation="-0.28991664433619657 4.393440373063153 -0.6823927340008105"
+              visible=""></a-entity>
+
+
+
+    <!--Arrow-->
+    <a-entity id="arrow1"
+    		  class="arrow"
+              obj-model="obj:arrow.obj;mtl:arrow.mtl"
+              position="2.24861 0.52698 49.21137"
+              scale="4.04432 2.75713 4.04432"
+              rotation="2.3519917490120297 2.73530051395455 0.0034377467707849396"
+              visible=""></a-entity>
+
+    <!--Arrow2-->
+    <a-entity id="arrow2"
+              class="arrow"
+              obj-model="obj:arrow.obj;mtl:arrow.mtl"
+              position="2.21943 0.29479 30.83543"
+              scale="4.04432 2.75713 4.04432"
+              rotation="2.3519917490120297 2.73530051395455 0.0034377467707849396"
+              visible=""></a-entity>
+
+    <!--Arrow3-->
+    <a-entity id="arrow3"
+              class="arrow"
+              obj-model="obj:arrow.obj;mtl:arrow.mtl"
+              position="1.08118 0.26227 20.83706"
+              scale="4.04432 10.70361 4.20575"
+              rotation="-4.09951302416104 88.07449930971502 3.5643704435088512"
+              visible=""></a-entity>
+
+    <!--Arrow4-->
+    <a-entity id="arrow4"
+              class="arrow"
+              obj-model="obj:arrow.obj;mtl:arrow.mtl"
+              position="3.89528 0.26306 21.17311"
+              scale="4.04432 10.70361 4.20575"
+              rotation="-2.6195630393381237 -91.34608831991201 -0.8376642964812635"
+              visible=""></a-entity>
+
+    <!--Arrow5-->
+    <a-entity id="arrow5"
+              class="arrow"
+              obj-model="obj:arrow.obj;mtl:arrow.mtl"
+              position="21.25073 0.26306 19.9869"
+              scale="4.04432 10.70361 4.20575"
+              rotation="-2.6195630393381237 -0.5890006133944863 -0.8376642964812635"
+              visible=""></a-entity>
+
+    <!--Arrow6-->
+    <a-entity id="arrow6"
+              class="arrow"
+              obj-model="obj:arrow.obj;mtl:arrow.mtl"
+              position="-10.36126 0.26306 20.25676"
+              scale="4.04432 10.70361 4.20575"
+              rotation="-2.6195630393381237 -2.9278143331185067 -0.8376642964812635"
+              visible=""></a-entity>
+
+    <!--Arrow7-->
+    <a-entity id="arrow7"
+              class="arrow"
+              obj-model="obj:arrow.obj;mtl:arrow.mtl"
+              position="19.49241 0.26306 11.88496"
+              scale="4.04432 10.70361 4.20575"
+              rotation="-2.6195630393381237 91.54375875923215 -0.8376642964812635"
+              visible=""></a-entity>
+
+    <!--Arrow8-->
+    <a-entity id="arrow8"
+              class="arrow"
+              obj-model="obj:arrow.obj;mtl:arrow.mtl"
+              position="4.68362 0.26306 13.98773"
+              scale="4.04432 10.70361 4.20575"
+              rotation="-2.6195630393381237 0.7156242861183981 -0.8376642964812635"
+              visible=""></a-entity>
+
+    <!--Arrow9-->
+    <a-entity id="arrow9"
+              class="arrow"
+              obj-model="obj:arrow.obj;mtl:arrow.mtl"
+              position="3.93402 0.26306 3.93695"
+              scale="4.04432 10.70361 4.20575"
+              rotation="-2.6195630393381237 -51.889922716023 -0.8376642964812635"
+              visible=""></a-entity>
+
+    <!--Arrow10-->
+    <a-entity id="arrow10"
+      		  class="arrow"
+              obj-model="obj:arrow.obj;mtl:arrow.mtl"
+              position="21.52016 0.26306 3.12691"
+              scale="4.04432 10.70361 5.20575"
+              rotation="-2.6195630393381237 0.7156242861183981 -0.8376642964812635"
+              visible=""></a-entity>
+
+    <!--Arrow11-->
+    <a-entity id="arrow11"
+      		  class="arrow"
+              obj-model="obj:arrow.obj;mtl:arrow.mtl"
+              position="18.83749 0.26306 -4.1663"
+              scale="4.7666 10.70361 5.20575"
+              rotation="-0.09453803619658584 91.19138971522669 -0.7849521793292279"
+              visible=""></a-entity>
+
+    <!--Arrow12-->
+    <a-entity id="arrow12"
+      		  class="arrow"
+              obj-model="obj:arrow.obj;mtl:arrow.mtl"
+              position="4.4157 0.27075 -5.31307"
+              scale="5.33345 9.19793 5.33279"
+              rotation="-0.10828902327972559 2.2150548359757627 -0.7832333059438353"
+              visible=""></a-entity>
+
+    <!--Arrow13-->
+    <a-entity id="arrow13"
+      		  class="arrow"
+              obj-model="obj:arrow.obj;mtl:arrow.mtl"
+              position="3.80825 0.27715 -12.47683"
+              scale="4.94919 9.57892 5.55368"
+              rotation="-0.7288023154064072 -57.13420541485543 -0.3059594625998596"
+              visible=""></a-entity>
+
+    <!--Arrow14-->
+    <a-entity id="arrow14"
+      		  class="arrow"
+              obj-model="obj:arrow.obj;mtl:arrow.mtl"
+              position="19.72449 1.1173 -11.34497"
+              scale="4.04432 2.75713 4.04432"
+              rotation="2.3519917490120297 2.73530051395455 0.0034377467707849396"
+              visible=""></a-entity>
+
+    <!--Arrow16-->
+    <a-entity id="arrow15"
+      		  class="arrow"
+              obj-model="obj:arrow.obj;mtl:arrow.mtl"
+              position="25.03733 1.1173 -18.43709"
+              scale="4.04432 2.75713 4.04432"
+              rotation="2.3519917490120297 -89.42667970622375 0.0034377467707849396"
+              visible=""></a-entity>
+
+    <!--Arrow16-->
+    <a-entity id="arrow16"
+      		  class="arrow"
+              obj-model="obj:arrow.obj;mtl:arrow.mtl"
+              position="44.23788 1.1173 -18.43709"
+              scale="4.04432 2.75713 4.04432"
+              rotation="2.3519917490120297 -89.42667970622375 0.0034377467707849396"
+              visible=""></a-entity>
+
+    <!--Arrow17-->
+    <a-entity id="arrow17"
+      		  class="arrow"
+              obj-model="obj:arrow.obj;mtl:arrow.mtl"
+              position="12.29083 1.1173 -16.35433"
+              scale="4.04432 2.75713 4.04432"
+              rotation="2.3519917490120297 3.4348819818092853 0.0034377467707849396"
+              visible=""></a-entity>
+
+    <!--Arrow18-->
+    <a-entity id="arrow18"
+      		  class="arrow"
+              obj-model="obj:arrow.obj;mtl:arrow.mtl"
+              position="-7.60721 1.1173 8.78675"
+              scale="4.04432 2.75713 4.04432"
+              rotation="2.3519917490120297 56.104600257005345 0.0034377467707849396"
+              visible=""></a-entity>
+
+    <!--Arrow19-->
+    <a-entity id="arrow19"
+      		  class="arrow"
+              obj-model="obj:arrow.obj;mtl:arrow.mtl"
+              position="-16.84655 1.1173 6.10023"
+              scale="4.04432 2.75713 4.04432"
+              rotation="2.3519917490120297 0.8021409131831525 0.0034377467707849396"
+              visible=""></a-entity>
+
+    <!--Arrow20-->
+    <a-entity id="arrow20"
+      		  class="arrow"
+              obj-model="obj:arrow.obj;mtl:arrow.mtl"
+              position="-16.84655 1.1173 -8.28483"
+              scale="4.04432 2.75713 4.04432"
+              rotation="2.3519917490120297 -87.40070094264117 0.0034377467707849396"
+              visible=""></a-entity>
+
+    <!--Arrow21-->
+    <a-entity id="arrow21"
+      		  class="arrow"
+              obj-model="obj:arrow.obj;mtl:arrow.mtl"
+              position="-15.84153 1.1173 -14.1118"
+              scale="4.04432 2.75713 4.04432"
+              rotation="2.3519917490120297 -62.105760203205584 0.0034377467707849396"
+              visible=""></a-entity>
+
+    <!--Arrow22-->
+    <a-entity id="arrow22"
+      		  class="arrow"
+              obj-model="obj:arrow.obj;mtl:arrow.mtl"
+              position="-10.59146 0.54241 -4.20868"
+              scale="4.04432 2.75713 4.04432"
+              rotation="2.3519917490120297 -143.04235130118082 0.0034377467707849396"
+              visible=""></a-entity>
+
+    <a-entity id="arrow23"
+      		  class="arrow"
+              obj-model="obj:arrow.obj;mtl:arrow.mtl"
+              position="-3.06034 0.12879 -3.55799"
+              scale="4.04432 2.75713 4.04432"
+              rotation="2.3519917490120297 -2.635605857601787 0.0034377467707849396"
+              visible=""></a-entity>
+
+    <!--Arrow24-->
+    <a-entity id="arrow24"
+      		  class="arrow"
+              obj-model="obj:arrow.obj;mtl:arrow.mtl"
+              position="-3.06034 1.1173 -13.39617"
+              scale="4.04432 2.75713 4.04432"
+              rotation="2.3519917490120297 -53.82250935899927 0.0034377467707849396"
+              visible=""></a-entity>
+</a-scene>
+
+
+
+
+
+</body>
+</html>
+<script>
+	/*
+		Pfeilbewegungen
+	*/
+ 	var camera = document.querySelector('a-entity#camera'),
+ 		cursor = document.querySelector('a-entity#cursor'),
+ 		arrows = document.querySelectorAll('a-entity.arrow')
+
+    for (var j = 0; j < arrows.length; j++) {
+        var arrow = arrows[j];
+
+		arrow.addEventListener('mouseenter', function () {
+	 		var self 		   = this,
+				arrowPosition  = self.getAttribute('position'),
+				cameraPosition = camera.getAttribute('position')
+
+	 		camera.setAttribute('position', {
+	 			x:arrowPosition.x,
+	 			y:cameraPosition.y,
+	 			z:arrowPosition.z
+	 		})
+
+	 		cursor.setAttribute('position', {
+	 			x:arrowPosition.x,
+	 			y:cameraPosition.y,
+	 			z:arrowPosition.z
+	 		})
+	 	})
+    };
+
+
+
+
+/*
+Animation Fahrrad
+ */
+    var bike= document.querySelector ('a-entity#bike');
+    bike.addEventListener("mouseenter", function () {
+        bike.setAttribute("rotation", {
+            x: 0,
+            y: 0,
+            z: 90
+
+
+        })
+    });
+/*
+
+/*
+Animation Ende
+ */
+var sleep= document.querySelector ('a-entity#sleep');
+sleep.addEventListener("mouseenter", function () {
+    var list = document.querySelectorAll(
+        'a-entity#helmet1,' +
+        'a-entity#bike,' +
+        'a-entity#door1,' +
+        'a-entity#Flashlight,' +
+        'a-entity#stairs1,' +
+        'a-cylinder#ground,'+
+        'a-cylinder#ground2,'+
+        'a-box#aone,'+
+        'a-box#atwo,'+
+        'a-box#athree_1,'+
+        'a-box#athree_2,'+
+        'a-box#afour,'+
+        'a-box#awall,'+
+        'a-box#bwall,'+
+        'a-box#cwall,'+
+        'a-box#dwall,'+
+        'a-box#one,'+
+        'a-box#two,'+
+        'a-box#three,'+
+        'a-box#four,'+
+        'a-box#five,'+
+        'a-box#six,'+
+        'a-box#seven,'+
+        'a-box#eight,'+
+        'a-box#nine,'+
+        'a-box#ten,'+
+        'a-box#eleven,'+
+        'a-box#twelve,'+
+        'a-box#thirteen,'+
+        'a-box#fourteen,'+
+        'a-box#fithteen,'+
+        'a-entity#arrow1,'+
+        'a-entity#arrow2,'+
+        'a-entity#arrow3,'+
+        'a-entity#arrow4,'+
+        'a-entity#arrow5,'+
+        'a-entity#arrow6,'+
+        'a-entity#arrow7,'+
+        'a-entity#arrow8,'+
+        'a-entity#arrow9,'+
+        'a-entity#arrow10,'+
+        'a-entity#arrow11,'+
+        'a-entity#arrow12,'+
+        'a-entity#arrow13,'+
+        'a-entity#arrow14,'+
+        'a-entity#arrow15,'+
+        'a-entity#arrow16,'+
+        'a-entity#arrow17,'+
+        'a-entity#arrow18,'+
+        'a-entity#arrow19,'+
+        'a-entity#arrow20,'+
+        'a-entity#arrow21,'+
+        'a-entity#arrow22,'+
+        'a-entity#arrow23,'+
+        'a-entity#arrow24'
+
+    );
+
+    for (var i=0;i<list.length;i++){
+        var item=list[i];
+        item.setAttribute("visible",false);
+    }
+});
+
+
+/*
+Animation im Labyrinth
+ */
+        var one = document.querySelector ('a-box#one');
+        one.addEventListener("mouseenter", function () {
+            one.setAttribute("rotation", {
+                x: 0,
+                y: 90,
+                z: 0
+
+            })
+
+        });
+
+        one.addEventListener("mouseleave", function () {
+           one.setAttribute("rotation", {
+                x: 0,
+                y: 0,
+                z: 0
+
+            })
+
+    });
+
+    var two = document.querySelector ('a-box#two');
+    two.addEventListener("mouseenter", function () {
+        two.setAttribute("scale", {
+            x: 4,
+            y: 80,
+            z: 30
+
+        })
+
+    });
+
+    two.addEventListener("mouseleave", function () {
+        two.setAttribute("scale", {
+            x: 1,
+            y: 25,
+            z: 20
+
+        })
+
+    });
+
+    var three = document.querySelector ('a-box#three');
+    three.addEventListener("mouseenter", function () {
+        three.setAttribute("src", "#schwarz")
+
+    });
+
+    three.addEventListener("mouseleave", function () {
+        three.setAttribute("src", "#texture")
+
+    });
+
+    var four = document.querySelector ('a-box#four');
+    four.addEventListener("mouseenter", function () {
+        four.setAttribute("rotation", {
+            x: 0,
+            y: 90,
+            z: 0
+
+        })
+
+    });
+
+    four.addEventListener("mouseleave", function () {
+        four.setAttribute("rotation", {
+            x: 0,
+            y: 0,
+            z: 0
+
+        })
+
+    });
+
+    var five = document.querySelector ('a-box#five');
+    five.addEventListener("mouseenter", function () {
+        five.setAttribute("scale", {
+            x: 3,
+            y: 60,
+            z: 40
+
+        })
+
+    });
+
+    five.addEventListener("mouseleave", function () {
+        five.setAttribute("scale", {
+            x: 1,
+            y: 25,
+            z: 20
+
+        })
+
+    });
+
+    var six = document.querySelector ('a-box#six');
+    six.addEventListener("mouseenter", function () {
+        six.setAttribute("src", "#schiefer")
+
+    });
+
+    six.addEventListener("mouseleave", function () {
+        six.setAttribute("src", "#texture")
+
+    });
+
+    var seven= document.querySelector ('a-box#seven');
+    seven.addEventListener("mouseenter", function () {
+        seven.setAttribute("rotation", {
+            x: 0,
+            y: 180,
+            z: 0
+
+        })
+
+    });
+
+    seven.addEventListener("mouseleave", function () {
+        seven.setAttribute("rotation", {
+            x: 0,
+            y: 90,
+            z: 0
+
+        })
+
+    });
+
+    var eight = document.querySelector ('a-box#eight');
+    eight.addEventListener("mouseenter", function () {
+        eight.setAttribute("scale", {
+            x: 4,
+            y: 60,
+            z: 40
+
+        })
+
+    });
+
+    eight.addEventListener("mouseleave", function () {
+        eight.setAttribute("scale", {
+            x: 1,
+            y: 25,
+            z: 27
+
+        })
+
+    });
+
+    var nine = document.querySelector ('a-box#nine');
+    nine.addEventListener("mouseenter", function () {
+        nine.setAttribute("src", "#schwarz")
+
+    });
+
+    nine.addEventListener("mouseleave", function () {
+        nine.setAttribute("src","#texture" )
+
+    });
+
+    var ten = document.querySelector ('a-box#ten');
+    ten.addEventListener("mouseenter", function () {
+        ten.setAttribute("rotation", {
+            x: 0,
+            y: 90,
+            z: 0
+
+        })
+
+    });
+
+    ten.addEventListener("mouseleave", function () {
+        ten.setAttribute("rotation", {
+            x: 0,
+            y: 0,
+            z: 0
+
+        })
+
+    });
+
+    var eleven = document.querySelector ('a-box#eleven');
+    eleven.addEventListener("mouseenter", function () {
+        eleven.setAttribute("src","#schiefer")
+
+    });
+
+    eleven.addEventListener("mouseleave", function () {
+        eleven.setAttribute("src","#texture")
+
+    });
+
+    var twelve = document.querySelector ('a-box#twelve');
+    twelve.addEventListener("mouseenter", function () {
+        twelve.setAttribute("scale", {
+            x: 5,
+            y: 70,
+            z: 50
+
+        })
+
+    });
+
+    twelve.addEventListener("mouseleave", function () {
+        twelve.setAttribute("scale", {
+            x: 1,
+            y: 25,
+            z: 20
+
+        })
+
+    });
+
+    var thirteen = document.querySelector ('a-box#thirteen');
+    thirteen.addEventListener("mouseenter", function () {
+        thirteen.setAttribute("rotation", {
+            x: 0,
+            y: 180,
+            z: 0
+
+        })
+
+    });
+
+    thirteen.addEventListener("mouseleave", function () {
+        thirteen.setAttribute("rotation", {
+            x: 0,
+            y: 90,
+            z: 0
+
+        })
+
+    });
+
+    var fourteen = document.querySelector ('a-box#fourteen');
+    fourteen.addEventListener("mouseenter", function () {
+        fourteen.setAttribute("src", "#schwarz")
+
+    });
+
+    fourteen.addEventListener("mouseleave", function () {
+        fourteen.setAttribute("src", "#texture")
+
+
+    });
+
+</script>
