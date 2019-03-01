@@ -21,20 +21,29 @@ Dieses nutzen wir über Editor **Webstorm**.
 + Die Wendeltreppe beginnt zu rotieren
 + Die Tür öffnet sich
 + Pfeile ermöglichen eine Bewegung durch den Raum
+
 ![](https://github.com/VRMediaTransformation/DasHaus/blob/master/Raum1.PNG)
 
 #### Raum 2:
-+ Labyrinthraum mit sich verändernden Wänden
-+ Labyrinth besteht aus Boxen, die im Editor ausgerichtet wurden
-+ Boxen wurden via HTML-Code gerendert
++ Der zweite Raum besteht aus einem Labyrinth mit sich verändernden Wänden und Texturen
++ Das Labyrinth besteht aus Boxen, die im Editor ausgerichtet wurden
++ Die Boxen wurden via HTML-Code gerendert
 + Wenn über die Wände mit dem Cursor gehovert wird, verändern diese aufgrund eines JS-Codes ihre Größe, Textur und Rotation
+
 ![](https://github.com/VRMediaTransformation/DasHaus/blob/master/Raum2.PNG)
 
 #### Raum 3:
 + Ausgang aus dem Labyrinth
 + User gelangt im Anschluss an das Labyrinth zu einerr Platform, auf der sich nur eine Luftmatratze befindet
 + Fährt der Cursor über die Luftmatratze verschwinden alle anderen Objekte
+
 ![](https://github.com/VRMediaTransformation/DasHaus/blob/master/Raum3.png)
+
+#### Schwierigkeiten
+Während der Entwicklung des Projekts ergaben sich einige Probleme und Schwierigkeiten in der Umsetzung:
++ Häufig war es nicht möglich 3D-Objekte aus 3Dsmax mit ihrer Textur in A-Frame zu übernehmen, sodass die Textur erst in Blender hinzugefügt werden konnte
++ Abhänig von den Objekte konnte die Textur manchmal nur im obj. Format eingelesen werden und nicht im .dae-Format
++ 
 
 #### Gruppe
 Mitglieder:
