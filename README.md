@@ -3,12 +3,15 @@
 
 #### Projekt Idee
 + Das Projekt visualisiert eine interaktive 3D-Virtual Reality Umgebung, die auf der Interpretation des Buchs "House of Leaves" (Seite 525 bis 535) von Mark Z. Danielewski basiert.
++ Dabei haben wir den Fokus auf die Adaption der Atmosphäre gelegt: 
+Wir wollten in unserer Visualisierung das Gefühl der Desorientierung übernehmen, in dem wir ein ein Labyrinth einbauen, das seine Wände verändert, die Gestaltung schlicht und düster halten und eine gruselige Musik einbauen. Am Ende soll der User desorientiert auf der Platform stehen  
 
 #### Programm
 + Für die Entwicklung des Projekts haben wir uns für die Nutzung von **A-Frame** entschieden:
 Ein webbasiertes front-end Programm, das eine dreidimensionale Welt über eine deklarative Sprache wie HTML schafft.
 Dieses nutzen wir über Editor **Webstorm**.
 + Für die Modellierung von 3D-Objekten verwenden wir Modellierungsprogramme wie **3Dsmax** und **Blender**. Diese werden mittels Assets im HTML-Code eingebunden. Zudem modellieren wir auch mittels A-Frame Boxen in A-Frame selbst.
++ über die HTML- Datei **index** lässt sich das Programm öffnen und verwenden (über Webstorm)
 
 #### Animation
 + Animationen werden durch die Bewegung des Cursors ausgelöst
